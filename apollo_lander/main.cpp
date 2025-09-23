@@ -31,9 +31,9 @@ using namespace std;
  * OUTPUT
  *     s : new position, in meters
  **************************************************/
-int computeDistance(int s, int v, int a, int t)
+double computeDistance(double s, double v, double a, double t)
 {
-    int S = s + v * t + (0.5 * a * t * t);
+    double S = s + v * t + (0.5 * a * t * t);
     return S;
 }
 
@@ -48,9 +48,9 @@ int computeDistance(int s, int v, int a, int t)
  * OUTPUT
  *     a : acceleration, in meters/second^2
  ***************************************************/
-int computeAcceleration(int f, int m)
+double computeAcceleration(double f, double m)
 {
-    int a = f / m;
+    double a = f / m;
     return a;
 }
 
@@ -68,7 +68,11 @@ int computeAcceleration(int f, int m)
  * OUTPUT
  *     v : new velocity, in meters/second
  ***********************************************/
-// your function goes here
+double computeVelocity(double v, double a, double t)
+{
+    double V = v + a * t;
+    return V;
+}
 
 
 /***********************************************
