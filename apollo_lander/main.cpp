@@ -1,6 +1,6 @@
 /*************************************************************
  * 1. Name:
- *      -your name-
+ *      Zach Nelson, Jay Underwood, Josh Palmer
  * 2. Assignment Name:
  *      Practice 02: Physics simulator
  * 3. Assignment Description:

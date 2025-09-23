@@ -1,0 +1,85 @@
+# ========================
+# Common C++ build output
+# ========================
+/build/
+/bin/
+/lib/
+/out/
+*.o
+*.obj
+*.so
+*.dll
+*.dylib
+*.a
+*.lib
+*.lo
+*.lai
+*.gch
+*.pch
+*.pdb
+*.idb
+*.ilk
+*.exe
+*.out
+*.app
+*.elf
+*.stackdump
+*.gcda
+*.gcno
+*.gcov
+*.prof
+
+# ========================
+# Xcode
+# ========================
+# User-specific settings
+*.xcuserstate
+*.xccheckout
+*.xcscmblueprint
+*.xcuserdatad
+xcuserdata/
+
+# Build products
+DerivedData/
+build/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+
+# Archives and workspace info
+*.xcworkspace/contents.xcworkspacedata
+*.moved-aside
+
+# ========================
+# Visual Studio
+# ========================
+.vs/
+[Bb]uild/
+[Bb]in/
+[Oo]bj/
+*.user
+*.userosscache
+*.suo
+*.sdf
+*.opensdf
+*.VC.db
+*.VC.VC.opendb
+
+# Visual Studio generated files
+ipch/
+*.tlog
+*.log
+*.cache
+*.dbmdl
+
+# ========================
+# Other editors / OS
+# ========================
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
