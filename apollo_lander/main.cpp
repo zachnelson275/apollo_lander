@@ -94,7 +94,7 @@ double computeVelocity(double v, double a, double t)
 double computeVerticalComponent(double a, double total)
 {
     double y;
-    y = cosh(a) * total;
+    y = cos(a) * total;
     return y;
 }
 
