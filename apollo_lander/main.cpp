@@ -93,7 +93,13 @@ double computeVelocity(double v, double a, double t)
  * OUTPUT
  *     y : the vertical component of the total
  ***********************************************/
-// your function goes here
+ // your function goes here
+double computeVerticalComponent(double a, double total)
+{
+    double y;
+    y = cosh(a) * total;
+    return y;
+}
 
 /***********************************************
  * COMPUTE HORIZONTAL COMPONENT
@@ -113,7 +119,12 @@ double computeVelocity(double v, double a, double t)
  * OUTPUT
  *     x : the vertical component of the total
  ***********************************************/
-// your function goes here
+double computeHorizontalComponent(double a, double total)
+{
+    double x;
+    x = sin(a) * total;
+    return x;
+}
 
 /************************************************
  * COMPUTE TOTAL COMPONENT
@@ -134,7 +145,12 @@ double computeVelocity(double v, double a, double t)
  * OUTPUT
  *    total : total component
  ***********************************************/
-// your function goes here
+double computeTotalComponent(double x, double y)
+{
+    double total;
+    total = sqrt((x * x) + (y * y));
+    return total;
+}
 
 
 /*************************************************
