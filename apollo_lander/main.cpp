@@ -6,9 +6,10 @@
  * 3. Assignment Description:
  *      Compute how the Apollo lander will move across the screen
  * 4. What was the hardest part? Be as specific as possible.
- *      -a paragraph or two about how the assignment went for you-
+ *      The hardest part of this assignment was figuring out how to get our project
+ *      working on Visual Studio and XCode at the same time
  * 5. How long did it take for you to complete the assignment?
- *      -total time in hours: reading the assignment, submitting, etc.
+ *      This assignment took 2 hours in total
  **************************************************************/
 
 #include <iostream>  // for CIN and COUT
