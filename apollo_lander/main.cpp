@@ -92,7 +92,6 @@ double computeVelocity(double v, double a, double t)
  * OUTPUT
  *     y : the vertical component of the total
  ***********************************************/
- // your function goes here
 double computeVerticalComponent(double a, double total)
 {
     double y;
