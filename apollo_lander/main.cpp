@@ -12,6 +12,7 @@
  **************************************************************/
 
 #include <iostream>  // for CIN and COUT
+#include <cmath>
 using namespace std;
 
 #define WEIGHT   15103.000   // Weight in KG
@@ -33,8 +34,7 @@ using namespace std;
  **************************************************/
 double computeDistance(double s, double v, double a, double t)
 {
-    double S = s + v * t + (0.5 * a * t * t);
-    return S;
+    return s = s + (v * t) + (0.5 * a * t * t);
 }
 
 /**************************************************
@@ -70,8 +70,7 @@ double computeAcceleration(double f, double m)
  ***********************************************/
 double computeVelocity(double v, double a, double t)
 {
-    double V = v + a * t;
-    return V;
+    return v = v + (a * t);
 }
 
 /***********************************************
