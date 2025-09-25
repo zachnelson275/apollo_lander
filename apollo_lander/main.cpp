@@ -226,6 +226,6 @@ int main()
         cout << "\tNew velocity:   (" << dx << ", " << dy << ")m/s\n";
         cout << "\tTotal velocity:  " << v << "m/s\n\n";
         
-        
+    }
         return 0;
-    }}
+}
