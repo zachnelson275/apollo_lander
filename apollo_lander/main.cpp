@@ -202,10 +202,10 @@ int main()
     double ddx;                 // Total horizontal acceleration
     double ddy;                 // Total vertical acceleration
     double v;                   // Total velocity
-
+    
     // Go through the simulator five times
-      // your code goes here
-      // Hint: Update the position _before_ updating the velocity
+    // your code goes here
+    // Hint: Update the position _before_ updating the velocity
     for (int i = 0; i < 5; i++) {
         aRadians = toradians(aDegrees);
         accelerationThrust = computeAcceleration(THRUST, WEIGHT);
@@ -218,14 +218,14 @@ int main()
         dx = computeVelocity(dx, ddx, t);
         dy = computeVelocity(dy, ddy, t);
         v = computeTotalComponent(dx, dy);
-
-      // Output
-      cout.setf(ios::fixed | ios::showpoint);
-      cout.precision(2);
-      cout << "\tNew position:   (" <<  x << ", " <<  y << ")m\n";
-      cout << "\tNew velocity:   (" << dx << ", " << dy << ")m/s\n";
-      cout << "\tTotal velocity:  " << v << "m/s\n\n";
-
-
-   return 0;
-}
+        
+        // Output
+        cout.setf(ios::fixed | ios::showpoint);
+        cout.precision(2);
+        cout << "\tNew position:   (" <<  x << ", " <<  y << ")m\n";
+        cout << "\tNew velocity:   (" << dx << ", " << dy << ")m/s\n";
+        cout << "\tTotal velocity:  " << v << "m/s\n\n";
+        
+        
+        return 0;
+    }}
