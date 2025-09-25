@@ -74,7 +74,6 @@ double computeVelocity(double v, double a, double t)
     return V;
 }
 
-
 /***********************************************
  * COMPUTE VERTICAL COMPONENT
  * Find the vertical component of a velocity or acceleration.
