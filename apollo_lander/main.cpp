@@ -161,6 +161,10 @@ double computeTotalComponent(double x, double y)
  *     r : radians from 0 to 2pi
  **************************************************/
 // your function goes here
+double toradians(double degrees) {
+    const double PI = 3.14159265358979323846;
+    return (degrees * 2 * PI) / 360.0;
+}
 
 /**************************************************
  * PROMPT
@@ -171,6 +175,12 @@ double computeTotalComponent(double x, double y)
  *      response : the user's response
  ***************************************************/
 // your function goes here
+double prompt(const char* question) {
+    double response;
+    cout << question;
+    cin >> response;
+    return response;
+}
 
 /****************************************************************
  * MAIN
@@ -196,6 +206,18 @@ int main()
     // Go through the simulator five times
       // your code goes here
       // Hint: Update the position _before_ updating the velocity
+    for (int i = 0; i < 5; i++) {
+        aRadians = toradians(aDegrees);
+        accelerationThrust = computeAcceleration(THRUST, WEIGHT);
+        ddxThrust = computeHorizontalComponent(aRadians, accelerationThrust);
+        ddyThrust = computeVerticalComponent(aRadians, accelerationThrust);
+        ddx = ddxThrust;
+        ddy = ddyThrust + GRAVITY;
+        x = computeDistance(x, dx, ddx, t);
+        y = computeDistance(y, dy, ddy, t);
+        dx = computeVelocity(dx, ddx, t);
+        dy = computeVelocity(dy, ddy, t);
+        v = computeTotalComponent(dx, dy);
 
       // Output
       cout.setf(ios::fixed | ios::showpoint);
